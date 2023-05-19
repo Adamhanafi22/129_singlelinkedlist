@@ -113,6 +113,18 @@ void searchData() {
 		return;
 	}
 	else {
+		int nim;
+		cout << "Masukan NIM:";
+		cin >> nim;
+		Node* currentNode = START;
+		while (currentNode != NULL) {
+			if (currentNode->noMhs == nim) {
+				cout << "Nim:" << currentNode->noMhs << ",Nama" << currentNode->name<< endl;
+				return;
+
+			}
+		}
+
 
 	}
 }
