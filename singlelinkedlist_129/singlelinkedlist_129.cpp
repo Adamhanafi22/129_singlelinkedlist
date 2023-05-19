@@ -32,7 +32,8 @@ void addnote() {
 		while ((current != NULL) && (nim >= current -> noMhs))
 
 			if (nim == current->noMhs) {
-				cout << "Nim"
+				cout << "Nim sudah ada" << endl;
+				return;
 			}
 
 
