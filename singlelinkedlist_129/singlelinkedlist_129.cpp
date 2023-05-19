@@ -21,6 +21,23 @@ void addnote() {
 	nodeBaru->noMhs = nim;
 	nodeBaru->name = nama;
 
+	if (START == NULL || nim <= START->noMhs) {
+		if (START != NULL && nim == START->noMhs) {
+			cout << "Nim sudah ada" << endl;
+			return;
+		}
+		Node* current = START;
+		Node* previous = START;
+
+		while ((current != NULL) && (nim >= current -> noMhs))
+
+			if (nim == current->noMhs) {
+				cout << "Nim"
+			}
+
+
+	}
+
 }
 
 
