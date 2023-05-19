@@ -144,6 +144,44 @@ int main() {
 			switch (pilihan)
 			{
 			case 1:
+				addNode();
+				cout << "Data berhasil ditambahkan" << endl;
+				system("pause");
+				system("cls");
+				break;
+			case 2:if (listEmpty())
+			{
+				cout << "list kosong" << endl;
+				system("pause");
+				system("cls");
+				break;
+			}
+				  int nim;
+				  cout << "masukan NIM:";
+				  cin >> nim;
+				  if (deletedNode(nim)) {
+					  cout << "nim:" << nim << "berhasil dihapus" << endl;
+					  system("pause");
+					  system("cls");
+
+				  }
+				  else
+					  cout << "data tidak ditemukan" << endl;
+				  break;
+			case 3:
+				traverse();
+				break;
+			case 4:
+				searchData();
+				break;
+			case 5:
+				break;
+			default:
+				cout << "pilihan tidak ada" << endl;
+				break;
+
+				  
+
 			}
 		}
 	}
