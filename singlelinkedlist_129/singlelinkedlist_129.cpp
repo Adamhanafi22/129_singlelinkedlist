@@ -35,7 +35,7 @@ void addnote() {
 	Node* previous = START;
 	Node* current = START;
 
-	while ((current != NULL) && (nim >= current ->))
+	while ((current != NULL) && (nim >= current ->noMhs))
 	{
 		if (nim == current->noMhs)
 		{
@@ -144,7 +144,7 @@ int main() {
 			switch (pilihan)
 			{
 			case 1:
-				addNode();
+				addnote();
 				cout << "Data berhasil ditambahkan" << endl;
 				system("pause");
 				system("cls");
@@ -159,7 +159,7 @@ int main() {
 				  int nim;
 				  cout << "masukan NIM:";
 				  cin >> nim;
-				  if (deletedNode(nim)) {
+				  if (deleteNode( nim)){
 					  cout << "nim:" << nim << "berhasil dihapus" << endl;
 					  system("pause");
 					  system("cls");
@@ -184,7 +184,12 @@ int main() {
 
 			}
 		}
-	}
+		catch (exception e)
+		{
+			cout << "terjadi kesalahan" << endl;
+			
+		}
+	} while (pilihan != 5);
 }
 
 
