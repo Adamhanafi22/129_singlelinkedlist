@@ -35,6 +35,9 @@ void addnote() {
 				cout << "Nim sudah ada" << endl;
 				return;
 			}
+		previous = current;
+		current = current->next;
+
 
 
 	}
